@@ -1,0 +1,27 @@
+<div id="registration">
+  <div class="card">
+
+
+  <form #registrationForm="ngForm" (ngSubmit)="registerChatter()">
+    <div class="form-group">
+      <label for="screen-name">Screen Name</label>
+      <input type="text" id="screen-name" class="form-control"
+        name="screen-name" [(ngModel)]="registration.screenName" required/>
+    </div>
+    <div class="form-section">
+    <label for="chat-room">Chat Room</label>
+    <select name="chat-room" id="chat-room" class="form-control" 
+    required [(ngModel)]="registration.selectedChatRoom">
+    <option *ngFor = "let room of templateChatRooms" [value] = "room">
+      {{room}}
+    </select>
+  </div>
+  <div>
+    <button class="submit-button" type="submit">
+      Register Chatter
+    </button>
+
+  </div>
+    </form>
+  </div>
+</div>

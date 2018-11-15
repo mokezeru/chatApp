@@ -1,0 +1,6 @@
+<div id = "conversation-container"> 
+  <div class="card" *ngFor = "let chat of messages">
+    <h3>{{chat.message}}</h3>
+    <h5>{{chat.screenName}} {{chat.timestamp}}</h5>
+  </div>
+</div>

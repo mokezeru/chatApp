@@ -1,0 +1,12 @@
+#registration {
+    width: 100%;
+    text-align: center; 
+}
+
+label {
+    margin: 16px 16px 0 0;
+    color: blue;
+}
+.form-section {
+    margin: 32px;
+}
